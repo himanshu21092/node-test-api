@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const sequelize = require('../../db');
+const sequelize = require('../db');
 const Merchant = sequelize.define('merchant', {
     id: {
         type: Sequelize.INTEGER,

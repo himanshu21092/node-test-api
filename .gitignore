@@ -81,3 +81,8 @@ typings/
 
 # Docs Output
 out/
+
+#vscode config
+.vscode/
+
+.DS_Store
