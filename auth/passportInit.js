@@ -1,19 +1,12 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 
-const Merchant = require('../models/merchant');
-
 module.exports = app => {
     app.use(passport.initialize());
     app.use(passport.session());
     passport.use(new LocalStrategy(
         async function (username, password, done) {
             try {
-                Merchant.find({
-                    where: {
-                        username: username
-                    }
-                })
                 console.log(username, password);
                 let user = {
                     username,

@@ -10,7 +10,3 @@ exports.loginController = async function (req, res, next) {
         next(e)
     }
 }
-
-exports.loginHello = async function (req, res, next) {
-    console.log("hello");
-}
